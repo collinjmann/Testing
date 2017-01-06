@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Template for website"/>
+		<title>Template</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	
+	<body>
+		<header>
+			<img src="img/logo.png" alt="logo" height="65" width="80">
+			
+			<nav>
+				<ul>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			
+		</section>
+
+		<footer>
+			<ul>
+				<li>@copy Vendicant Games, all rights reserved</li>
+				<li id="date">Last Updated: mm/dd/yy</li>
+			</ul>
+		</footer>
+		
+		<script>
+			var update = document.getElementById("date");
+			var date = new Date();
+			
+			update.innerHTML = "Last Updated: " + 
+				String(date.getMonth() + 1) + "/" + String(date.getDate()) + "/" + 
+				String(date.getFullYear());
+		</script>
+	</body>
+</html>
